@@ -87,7 +87,7 @@ function App() {
               <Linkedin className="w-6 h-6 text-gray-700" />
             </a>
             <a
-              href="chulindrarai123@gmail.com"
+              href="mailto:Chulindrarai123@gmail.com"
               className="p-2 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow"
             >
               <Mail className="w-6 h-6 text-gray-700" />
