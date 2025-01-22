@@ -71,7 +71,7 @@ function App() {
             Chulindra Rai
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Full Stack Developer & Machine learning engineering
+            Full Stack Developer & Machine learning Engineer
           </p>
           <div className="flex justify-center gap-4 mb-12">
             <a
@@ -124,7 +124,7 @@ function App() {
                     "TypeScript",
                     "Python",
                     "Node.js",
-                    "Python",
+                    //"Python",
                     "AWS",
                     "Docker",
                     "PHP",
