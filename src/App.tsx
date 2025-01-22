@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 //import emailjs from "emailjs-com";
+//import Typed from "typed.js";
 import {
   Github,
   Linkedin,
@@ -51,7 +52,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-yellow-50">
       {/* Hero Section */}
       <header className="min-h-screen flex flex-col items-center justify-center relative bg-gradient-to-br from-blue-50 to-indigo-50">
         <div
@@ -65,13 +66,20 @@ function App() {
           <img
             src="https://media-hosting.imagekit.io//6eebe449fef34f00/chulin.jpg?Expires=1832088733&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NWlo1CEAIBltBZEAbZ4jVOI3GAwLZfIP5yKMKWI65Espm0SrvvtqR7E99GRdXdm8VmZOqyRueZh0WU0~53VuKEl5p9idKPpmnU7eXP~PHLhUjhfTLj5H0k0d-qW4oMvyRMS1xoD3KORn9TqnHPk18gv~ZBrnHq~EF7pI3yJrmctUXaKKZSlHDdlBcWdnbDdTGjOGlXCZ8EPpcYl2qMeXBw8v9wSERLM6bGSJSF-JddTinHFYagqvGG0waLYZRp4KxcOdt-nuceGa01ODg9QMSwgLoKSfRyj~nYPhc7tMIb4-kWkP6p2R6qpSrIwlMEOHOg-tw9XIwJjOy0Uu6m0slQ__"
             alt="Chulindra Rai"
-            className="w-32 h-32 rounded-full mx-auto mb-8 object-cover border-4 border-white shadow-lg"
+            className="w-40 h-40 rounded-full mx-auto mb-8 object-cover border-7 border-red shadow-lg"
           />
           <h1 className="text-5xl font-bold mb-4 text-gray-800">
             Chulindra Rai
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Full Stack Developer & Machine learning Engineer
+
+          <p className="text-xl text-green-500 mb-8">
+            <span className="word slide-left">Full Stack</span>
+            <span className="word slide-right">Developer</span>
+            <span className="word slide-left text-black">||</span>
+
+            <span className="word slide-left">Machine</span>
+            <span className="word slide-right">learning</span>
+            <span className="word slide-left">Engineer</span>
           </p>
           <div className="flex justify-center gap-4 mb-12">
             <a
@@ -100,7 +108,7 @@ function App() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-2 mb-8">
@@ -158,7 +166,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-2 mb-8">
@@ -187,10 +195,10 @@ function App() {
               {/* Project 2 */}
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                  number plate detection using Yolov8 model
+                  Number plate detection using Yolov8 model
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  created number plate detection using Yolov8 model and able to
+                  Created number plate detection using Yolov8 model and able to
                   detect vehicle plate numbe
                 </p>
                 <a
@@ -243,14 +251,14 @@ function App() {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-2 mb-8">
               <Briefcase className="w-6 h-6 text-indigo-600" />
               <h2 className="text-3xl font-bold text-gray-800">Experience</h2>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-8 ">
               {[
                 {
                   title: "Machine Learning Intern",
@@ -281,7 +289,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-center gap-2 mb-8">
@@ -384,7 +392,7 @@ function App() {
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
                 {submitStatus === "success" && (
-                  <p className="text-green-600">Message sent successfully!</p>
+                  <p className="text-blue-600">Message sent successfully!</p>
                 )}
                 {submitStatus === "error" && (
                   <p className="text-red-600">
@@ -395,7 +403,7 @@ function App() {
             </form>
 
             <div className="mt-12 text-center">
-              <p className="text-gray-600 mb-4">Or reach out directly:</p>
+              <p className="text-red-600 mb-4">Or reach out directly:</p>
               <a
                 href="mailto:contact@chulindrarai.com"
                 className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700"

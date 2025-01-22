@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation: slideFromLeft 1s ease-out forwards;
+}
+
+.slide-right {
+  animation: slideFromRight 1s ease-out forwards;
+}
+
+.slide-top {
+  animation: slideFromTop 1s ease-out forwards;
+  animation-delay: 0.3s; /* Adding a small delay to make sure it comes after the text */
+}
+
+.word {
+  display: inline-block;
+  margin-right: 15px; /* Space between words */
+}
+
+.word:nth-child(odd) {
+  animation-delay: 0.2s; /* Delay for left-side words */
+}
+
+.word:nth-child(even) {
+  animation-delay: 0.4s; /* Delay for right-side words */
+}
